@@ -31,3 +31,8 @@ bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
 # puts bitcoin_data
+
+bitcoin_value = bitcoin_data["USD"]["last"]
+bitcoin_worth = bitcoin_value*bitcoin
+p "1 Bitcoin is valued at $#{bitcoin_value} USD"
+p "Yout Bitcoin is worth $#{bitcoin_worth} USD"
